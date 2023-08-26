@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-#udl62r5a(1b3)8&g_4syv@14tl8ex8=#@g_gt4au=%_asf7-)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.109.143.180']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'whitenoise.runserver_nostatic',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -53,7 +52,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -162,14 +160,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'emylazy@gmail.com'
 EMAIL_HOST_PASSWORD = 'Mook&2023'
 
-
-
-AWS_ACCESS_KEY_ID = 'AKIARM2BVO4XFO7CMGHV'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'AWS_STORAGE_BUCKET_NAME'
-AWS_S3_SIGNATURE_NAME = 's3v4',
-AWS_S3_REGION_NAME = 'ap-south-1'
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL =  None
-AWS_S3_VERITY = True
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
