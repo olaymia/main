@@ -1,0 +1,164 @@
+.btn {
+    font-size: $font-size-14;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-100;
+    padding: $space8 $space24;
+    border: 0;
+    transition: $transition;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover,
+    &:active {
+        transition: $transition;
+    }
+
+    &.btn-primary-link {
+        border: 0;
+        background-color: transparent;
+        color: $primary;
+        padding: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $primary-dark;
+        }
+    }
+
+    &.btn-primary {
+        background: $primary-linear-bg;
+        color: $white;
+        border: none;
+        &:hover,
+        &:active,
+        &:focus {
+            background: $primary-linear-bg-hover;
+        }
+    }
+
+    &.btn-secondary {
+        background: $secondary;
+        color: $white;
+        
+        &:hover,
+        &:active,
+        &:focus {
+            background: $primary;
+        }
+    }
+
+    &.btn-secondary-outline {
+        border: $border-width-1 $border-solid $secondary;
+        color: $secondary;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+
+    &.btn-primary-outline {
+        border: $border-width-1 $border-solid $primary;
+        color: $primary;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $primary;
+            color: $white;
+
+            svg {
+                stroke: $white;
+            }
+        }
+    }
+
+    &.btn-white-outline {
+        border: $border-width-1 $border-solid $white;
+        color: $white;
+        background: transparent;
+        
+        &:hover,
+        &:active {
+            color: $primary;
+            background-color: $white;
+        }
+    }
+
+    &.btn-question-number{
+        
+        @media (max-width: $md-brekpoint) {
+            border-right: $border-width-1 $border-solid $white;
+        }
+
+        .bookmark {
+            width: 11px;
+            height: 14px;
+            left: 8px;
+            bottom: 9px;
+
+            @media (max-width: $md-brekpoint) {
+                left: 8px;
+                bottom: 14px;
+            }
+        }
+    }
+
+    &.btn-white {
+        background-color: $white;
+        color: $primary;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $white-dark;
+        }
+    }
+    &.btn-white-link {
+        background-color: transparent;
+        color: $white;
+        padding: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white-dark;
+
+            svg {
+                stroke: $white-dark;
+            }
+        }
+    }
+
+    &.btn-body-link {
+        background-color: transparent;
+        color: $body;
+        padding: 0;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $primary !important;
+
+            svg {
+                stroke: $primary !important;
+            }
+        }
+    }
+
+    &.btn-purple {
+        background-color: $primary;
+        border: $border-width-1 $border-solid $primary;
+        color: $white;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $primary-dark;
+        }
+     }
+}

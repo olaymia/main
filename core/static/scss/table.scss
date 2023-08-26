@@ -1,0 +1,58 @@
+// dashboard table 
+.dashboard-table {
+    overflow-x: auto;
+
+    tr {
+        // border-bottom: $border-width-1 $border-solid $divider;
+    }
+
+    thead {
+        th {
+            padding: $space12 $space8;
+            // border-right: $border-width-1 $border-solid $divider;
+          
+            &:last-child {
+                border-right: 0;
+            }
+        }
+
+        .name-title {
+            &::after {
+                position: absolute;
+                content: "";
+                background-color: $primary;
+                width: 5px;
+                height: 5px;
+                border-radius: $border-radius-100;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 25px;
+            }
+            
+        }
+    }
+
+    tbody {
+        td {
+            padding: $space12 $space8;
+            // border-right: $border-width-1 $border-solid $divider;
+         
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .table-user-img {
+        border-radius: $border-radius-100;
+        object-fit: cover;
+    }
+}
+
+.pattern{
+    tbody, td, tfoot, th, thead, tr {
+        border-color: $divider !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+    }
+}

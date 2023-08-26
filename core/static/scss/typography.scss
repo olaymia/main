@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+  font-family: $font-family-urbanist;
+  margin-bottom: 0;
+  color: $secondary;
+  font-weight: $font-weight-bold;
+}
+
+h1, .h1
+ {
+  font-size: $h1-font-size;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h1-mobile-size;
+  }
+}
+
+h2{
+  font-size: $h2-font-size ;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h2-mobile-size;
+  }
+}
+
+h3
+ {
+  font-size: $h3-font-size;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h3-mobile-size;
+  }
+}
+
+h4 {
+  font-size: $h4-font-size;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h4-mobile-size;
+  }
+}
+
+h5 {
+  font-size: $h5-font-size;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h5-mobile-size;
+  }
+}
+
+h6 {
+  font-size: $h6-font-size;
+
+  @media only screen and (max-width: $md-brekpoint) {
+    font-size: $h6-mobile-size;
+  }
+}

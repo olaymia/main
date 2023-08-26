@@ -1,0 +1,34 @@
+.custom-radio {
+    .custom-radio-label {
+        background-image: url(../images/uncheck.svg);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 16px) center;
+        cursor: pointer;
+        padding: $space8 $space16;
+        border: $border-width-1 $border-solid $divider;
+        transition: 0.3s ease;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .custom-radio-input {
+        display: none;
+
+        &:checked+.custom-radio-label {
+            background-image: url(../images/questionans-check.svg);
+            transition: 0.3s ease;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            border-left: 2px $border-solid $primary;
+            border-top: $border-width-1 $border-solid transparent;
+            border-bottom: $border-width-1 $border-solid transparent;
+            border-right: $border-width-1 $border-solid transparent;
+            background-color: $white;
+        }
+    }
+}
+
+.contact-form {
+    input[placeholder] {
+        color: $body !important;
+    }
+}

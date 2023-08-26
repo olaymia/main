@@ -1,0 +1,84 @@
+.next-prep-section {
+   .plan-show {
+      &:checked {
+         +.plan-details {
+            background-color: $primary;
+
+            .plan-value {
+               color: $white;
+            }
+            .clinical-buy-now {
+               visibility: visible;
+            }
+         }
+      }
+   }
+
+   .plan-show, [type="radio"]:root {
+      accent-color: $secondary;
+     }
+
+   .plan-details {
+      background-color: $grey-light;
+
+      .clinical-buy-now {
+         visibility: hidden;
+      }
+   }
+
+   .clinical-plan-description {
+      line-height: 2.5;
+
+      @media only screen and (max-width: $md-brekpoint) {
+         line-height: 2;
+       }
+   }
+}
+
+// pricing why section 
+.pricing-why-section {
+  
+   &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 100%;
+      background: linear-gradient(90deg, #F9F9F9 0%, #F9F9F9 50.53%, rgba(249, 249, 249, 0.00) 100%);
+      backdrop-filter: blur(0px);
+      top: -40px;
+      left: 0;
+
+      @media only screen and (max-width: $md-brekpoint) {
+         width: 30%;
+       }
+   }
+
+   .why-left-side {
+      width: 50%;
+
+      @media only screen and (max-width: $md-brekpoint) {
+         width: 100%;
+       }
+
+      .why-left-content {
+         position: relative;
+         z-index: 1;
+      }
+   }
+
+   .why-right-img {
+      background-image: url('../../assets/images/pricing-why-img.png');
+      background-position: right;  
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+   
+      @media only screen and (max-width: $md-brekpoint) {
+        opacity: 0.3;
+       }
+   }
+}
+

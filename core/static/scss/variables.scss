@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;900&display=swap');
+
+
+$font-family-mulish:           'Mulish', sans-serif;
+$font-family-urbanist:         'Urbanist', sans-serif;
+
+
+//Colors
+
+$primary-linear-bg:             linear-gradient(to right, #7400b8, #9601cb, #b801dd, #db01ef, #ff00ff);
+$primary-linear-bg-hover:       linear-gradient(to right, #ff00ff, #db01ef, #b801dd, #9601cb, #7400b8);
+$white-linear-gradient:         linear-gradient(180deg, #FFF 0%, #FBF0F6 100%);
+$light-pink-liner-gradient:     linear-gradient(89deg, rgba(98, 16, 204, 0.05) 0%, rgba(255, 0, 255, 0.05) 100%);
+$text-gradient-color:           linear-gradient(to right, #0F2027, #203A43 , #2C5364);
+$primary-liner-gradient-lighter:linear-gradient(180deg, rgba(255, 0, 255, 0.10) 20.81%, rgba(70, 0, 184, 0.10) 100%);
+$primary-light-linear-gradient: linear-gradient(180deg, rgba(255, 0, 255, 0.15) 20.81%, rgba(70, 0, 184, 0.15) 100%);
+$primary-purple-linear-gradient: linear-gradient(0deg, rgba(15, 0, 184, 0.09) 0%, rgba(255, 0, 255, 0.09) 100%), #FFF;
+$primary:                       #7400B8;
+$primary-dark:                  #540085;
+$secondary:                     #0B1014;
+$white:                         #FFFFFF;
+$white-dark:                    #e6e6e6;
+$body:                          #4D4D4D;
+$body-lighter:                  rgba(77, 77, 77, 0.25);
+$grey:                          #E4E4E4;
+$grey-light:                    #F9F9F9;
+$white-smoke:                   #F5F5F5;
+$Silver-Phoenix:                #edecf5;
+$soft-silver:                   #F9FBEF;
+$purple:                        #352A6F;
+$purple-light:                  #ad5389;
+$green:                         #2C460E;
+$divider:                       #DBDBDB;    
+$red:                           #F30000;
+$black:                         #000;
+$success:                       #8AC046;
+$pink-light:                    #FFF5FF;
+$white-light:                   rgba(255,255,255,0.9);
+$dark-shadow-grey:              #222;
+$lighter-grey:                  #FCFCFC;
+$green-lighter:                 #EDF8F4;
+$baby-pink:                     #FBF0F6;
+$baby-pink-darker:              #E9E1F0;
+$bg-grey-pink-gradient:         linear-gradient(90deg, #EBE9F9 0%, #FEE8FE 100%);
+
+
+// Spacing
+
+$space2:                        2px;
+$space4:                        4px;
+$space6:                        6px;
+$space8:                        8px;
+$space10:                       10px;
+$space12:                       12px;
+$space16:                       16px;
+$space20:                       20px;
+$space24:                       24px;
+$space30:                       30px;
+$space32:                       32px;
+$space36:                       36px;
+$space40:                       40px;
+$space44:                       44px;
+$space52:                       52px;
+$space50:                       50px;
+$space56:                       56px;
+$space80:                       80px;
+$space82:                       82px;
+$space84:                       84px;
+$space90:                       90px;
+$space70:                       70px;
+$space72:                       72px;
+$space64:                       64px;
+$space62:                       62px;
+$space46:                       46px;
+$space120:                      120px;
+$space130:                      130px;
+$space150:                      150px;
+$space104:                      104px;
+$space100:                      100px;
+$space158:                      158px;
+$space160:                      160px;
+$space186:                      186px;
+
+
+
+
+// Font size
+
+$h1-font-size:                    40px;
+$h1-mobile-size:                  32px;
+$h2-font-size:                    32px;
+$h2-mobile-size:                  28px;
+$h3-font-size:                    28px;
+$h3-mobile-size:                  24px;
+$h4-font-size:                    24px;
+$h4-mobile-size:                  20px;
+$h5-font-size:                    20px;
+$h5-mobile-size:                  18px;
+$h6-font-size:                    18px;
+$h6-mobile-size:                  16px;
+
+$font-size-10:                    10px;
+$font-size-11:                    11px;
+$font-size-12:                    12px;
+$font-size-13:                    13px;
+$font-size-14:                    14px;
+$font-size-16:                    16px;
+$font-size-18:                    18px;
+$font-size-20:                    20px;
+$font-size-24:                    24px;
+$font-size-28:                    28px;
+$font-size-30:                    30px;
+$font-size-32:                    32px;
+$font-size-40:                    40px;
+$font-size-48:                    48px;
+$font-size-52:                    52px;
+$font-size-54:                    54px;
+$font-size-56:                    56px;
+
+//Font weight
+
+$font-weight-normal:              400;
+$font-weight-medium:              500;
+$font-weight-semimedium:          600;
+$font-weight-bold:                700;
+$font-weight-bolder:              900;
+
+
+//border-radius
+
+$border-radius-4:                 4px;
+$border-radius-8:                 8px;
+$border-radius-100:               100px;
+
+// Border width 
+
+$border-width-1:                  1px;
+$border-width-2:                  2px;
+$border-width-5:                  5px;
+
+// Border Type 
+
+$border-solid:                    solid;
+
+// Transition
+
+$transition:                      0.3s ease;
+
+// breakpoint
+$xl-brekpoint:                    1199.98px;
+$lg-brekpoint:                    991.98px;
+$md-brekpoint:                    767.98px;
+$sm-brekpoint:                    575.98px;
+
+//box-shadow
+
+$box-shadow:                      0px 3px 16px 4px rgba(0, 0, 0, 0.20);
+$box-shadow-light-black:          0px 3px 15px 0px rgba(0, 0, 0, 0.11);
+$card-hover-shadow:               0 6px 16px rgba(0,0,0,0.16);
+$heder-box-shadow:                0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+
+
+

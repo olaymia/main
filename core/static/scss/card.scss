@@ -1,0 +1,88 @@
+.card {
+    border-radius: $border-radius-4;
+
+    &:hover {
+        transition: $transition;
+    }
+
+    &.knowledge-base-card {
+        &:hover {
+            box-shadow: $card-hover-shadow;
+        }
+    }
+
+    &.next-exam-mcq-card {
+        border: $border-width-1 $border-solid $grey;
+
+        &:hover {
+            box-shadow: $card-hover-shadow;
+        }
+    }
+
+    &.plan-card {
+        background-color: $grey-light;
+
+        .plan-qtly,
+        .plan-list {
+            color: $body;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $primary;
+            color: $white;
+
+            .btn-secondary-outline {
+                background-color: $secondary;
+                color: $white;
+            }
+
+            .btn-body-link {
+                color: $white !important;
+
+                svg {
+                    stroke: $white !important;
+                }
+            }
+
+            .plan-title,
+            .plan-description,
+            .plan-rs,
+            .plan-qtly,
+            .plan-list,
+            .plan-p {
+                color: $white !important;
+            }
+        }
+
+        &.plan-active {
+          
+                background-color: $primary;
+                color: $white;
+    
+                .btn-secondary-outline {
+                    background-color: $secondary;
+                    color: $white;
+                }
+    
+                .btn-body-link {
+                    color: $white !important;
+    
+                    svg {
+                        stroke: $white !important;
+                    }
+                }
+    
+                .plan-title,
+                .plan-description,
+                .plan-rs,
+                .plan-qtly,
+                .plan-list,
+                .plan-p {
+                    color: $white !important;
+                }
+          
+        }
+    }
+}

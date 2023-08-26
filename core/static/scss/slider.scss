@@ -1,0 +1,115 @@
+.owl-carousel {
+	.owl-nav {
+		display: none;
+	}
+
+	.item {
+		.guest-lectures-left-img {
+			svg {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+	}
+}
+
+
+
+
+.owl-theme {
+	.owl-dots {
+		.owl-dot.active {
+			span {
+				background-color: $primary;
+				width: 12px;
+				height: 4px;
+				opacity: 1;
+			}
+		}
+
+		.owl-dot {
+			span {
+				background-color: $primary;
+				width: 4px;
+				height: 4px;
+				opacity: 0.20;
+			}
+		}
+	}
+}
+
+// doctor recommended carousel 
+.doctor-recommended-carousel {
+	.owl-stage-outer {
+		margin-bottom: $space24;
+
+		.owl-stage {
+			display: flex;
+		}
+	}
+}
+
+// common carousel 
+.doctor-recommended-carousel,
+.recommended-carousel,
+.guest-lectures-carousel {
+
+	&.owl-theme {
+		.owl-dots {
+			.owl-dot {
+
+				span {
+					width: 4px;
+					height: 4px;
+					background-color: $primary;
+					opacity: 0.2;
+					margin: 2px;
+				}
+
+				&.active {
+					span {
+						opacity: 0.4;
+						width: 12px;
+						background-color: $primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+// our-culture-carousel
+
+.our-culture-carousel {
+
+	.owl-stage-outer {
+		margin-bottom: $space24;
+	}
+	
+	.owl-dots {
+		text-align: center;
+
+		.owl-dot {
+			span {
+				width: 4px;
+				height: 4px;
+				background-color: $primary;
+				border-radius: $border-radius-100;
+				opacity: 0.2;
+				margin: 2px;
+				display: block;
+			}
+
+			&.active {
+				span {
+					opacity: 0.4;
+					width: 12px;
+					background-color: $primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.pre-clinical-right-side {
+      background-image: url('../../assets/images/next-exam.png');
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 100vh;
+
+      @media only screen and (max-width: $md-brekpoint) {
+         width: 100%;
+       }
+
+      .pre-clinical-plan {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         left: 0;
+         right: 0;
+         margin: 0 auto;
+
+         .plan-name {
+            @media only screen and (max-width: $md-brekpoint) {
+               width: 280px;
+             }
+         }
+
+         .clinical-plan-details {
+            @media only screen and (max-width: $md-brekpoint) {
+               width: 260px;
+             }
+         }
+      }
+
+      
+}
+
+.plan-form-left-side {
+   overflow-y: auto;
+   height: 100vh;
+
+   @media only screen and (max-width: $md-brekpoint) {
+      overflow: hidden;
+      height: 100%;
+  }
+}
+
+.plan-plus-icon {
+   width: 30px;
+   height: 30px;
+   background-color: $white;
+}
+
+.left-form-space {
+   width: 100%;
+   max-width: 420px;
+
+   @media only screen and (max-width: $md-brekpoint) {
+       margin: 0 auto;
+   }
+}

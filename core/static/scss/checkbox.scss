@@ -1,0 +1,75 @@
+
+/* custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: $border-width-1 $border-solid $primary;
+    border-radius: 4px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.custom-checkbox {
+    .pink-checkbox {
+        &:checked {
+            &~.checkmark {
+                background-color: $primary;
+
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .checkmark {
+        &:after {
+            left: 5px;
+            top: 1px;
+            width: 5px;
+            height: 10px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+// questions option checkbox
+.custom-checkbox {
+    .custom-checkbox-label {
+        background-image: url(./../images/checkbox-outline.svg);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 16px) center;
+        cursor: pointer;
+        padding: $space8 $space16;
+        border: $border-width-1 $border-solid $divider;
+        transition: 0.3s ease;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .custom-checkbox-input {
+        display: none;
+
+        &:checked+.custom-checkbox-label {
+            background-image: url(./../images/checkbox-checked.svg);
+            transition: 0.3s ease;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            border-left: 2px $border-solid $primary;
+            border-top: $border-width-1 $border-solid transparent;
+            border-bottom: $border-width-1 $border-solid transparent;
+            border-right: $border-width-1 $border-solid transparent;
+            background-color: $white;
+        }
+    }
+}

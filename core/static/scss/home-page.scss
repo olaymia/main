@@ -1,0 +1,121 @@
+.intro-section {
+   padding-top: $space130;
+   padding-bottom: $space130;
+
+   @media only screen and (max-width: $md-brekpoint) {
+      padding-top: $space40;
+      padding-bottom: $space40;
+   }
+}
+.tabs-part {
+   border: $border-width-1 $border-solid $primary;
+   border-radius: $border-radius-100;
+   background-color: $white;
+   overflow: hidden;
+
+   &.nav-tabs {
+      .nav-link {
+         padding: $space12 $space52;
+         color: $secondary;
+         border: 0;
+         border-radius: $border-radius-100;
+         font-weight: $font-weight-bold;
+
+         @media only screen and (max-width: $md-brekpoint) {
+            padding: $space8 $space16;
+            font-size: $font-size-12 !important;
+         }
+   
+         &:hover,
+         &.active {
+            border: 0;
+            color: $white;
+            background-color: $primary;
+         }
+      }
+   }
+
+   &.plan-tabs-part {
+      &.nav-tabs {
+         .nav-link {
+            padding: $space12 $space90;
+
+            @media only screen and (max-width: $md-brekpoint) {
+               padding: $space8 $space24;
+               font-size: $font-size-14;
+            }
+         }
+      }
+   }
+}
+
+.grand-mock-test {
+   position: relative;
+   &::before {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: #FF00FF;
+      right: -4px;
+      top: -4px;
+      border-radius: 8px;
+      opacity: 0.12;
+   }
+   &::after {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: #FF00FF;
+      left: -4px;
+      bottom: -4px;
+      border-radius: 8px;
+      opacity: 0.12;
+   }
+
+   .nav-owl-none {
+      z-index: 1;
+   }
+}
+
+// why section 
+.why-img {
+   width: 233px;
+   right: 32px;
+
+   @media only screen and (max-width: $md-brekpoint) {
+      width: 150px;
+      right: 0px;
+   }
+}
+.why-sec-x-img {
+   right: 80px;
+
+   @media only screen and (max-width: $md-brekpoint) {
+      right: -80px;
+   }
+}
+
+
+// Doctor’s Recommendation section 
+.doctor-recommended-carousel {
+   .doctor-img {
+      object-fit: cover;
+      height: 210px;
+      width: 100%;
+   }
+}
+
+// lets talk expert section 
+.lets-talk-expert-section {
+   .lets-talk-expert-content {
+      background: linear-gradient(89deg, rgba(116, 0, 184, 0.10) 0%, rgba(255, 0, 255, 0.10) 78.96%);
+   }
+}
+
+// mobile menu scroll 
+.body-menubar {
+   overflow: hidden;
+   height: 100vh;
+}

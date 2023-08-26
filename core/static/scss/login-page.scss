@@ -1,0 +1,77 @@
+.login-left-side {
+    height: 100vh;
+    overflow: hidden;
+
+    @media only screen and (max-width: $md-brekpoint) {
+        height: 100%;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url('../../../assets/images/cross-img.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 58%;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+
+        @media only screen and (max-width: $md-brekpoint) {
+            display: none;
+        }
+    }
+
+    .login-left-side-cross-img {
+        bottom: 0;
+        left: 27%;
+    }
+
+    .login-img {
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // margin: 0 auto;
+        z-index: 1;
+    }
+
+}
+
+.login-right-side {
+    height: 100vh;
+    overflow-y: auto;
+
+    .login-form-space {
+        width: 100%;
+        max-width: 420px;
+
+        @media only screen and (max-width: $md-brekpoint) {
+            margin: 0 auto;
+        }
+    }
+
+    @media only screen and (max-width: $md-brekpoint) {
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .login-or-line {
+        position: relative;
+    
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: $grey;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    
+        .text-or {
+            z-index: 1;
+        }
+    }
+}
+

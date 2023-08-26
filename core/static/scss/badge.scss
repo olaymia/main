@@ -1,0 +1,11 @@
+.badge {
+
+    &.badge-red-outline {
+        font-size: $space10;
+        border: $border-width-1 $border-solid $red;
+        padding: $space4 $space8;
+        color: $red;
+        border-radius: $border-radius-100;
+    }
+
+}

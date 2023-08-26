@@ -1,0 +1,74 @@
+.questions-right-sidebar {
+    position: fixed;
+    z-index: 110;
+}
+
+.que-image {
+    img {
+        width: 550px;
+        height: auto;
+
+        @media only screen and (max-width: $xl-brekpoint) {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+} 
+.questions-right-sidebar{
+    .offcanvas-backdrop{
+        display: none;
+    }
+    .lab-value-sidebar{
+       top: 58px;
+       width: 48%;
+       bottom: 0;
+        right: -100%;
+        height: calc(100vh - 104px);
+        position: fixed;
+        display: flex;
+        background: $white;
+        flex-direction: column;
+        transition: $transition;
+        &.show {
+            right: 0;
+            transition: $transition;
+        }
+        @media only screen and (max-width: $md-brekpoint) {
+            width: 85%;
+           
+            z-index: 102;
+        }
+        @media only screen and (max-width: $sm-brekpoint) {      
+            height: calc(100vh - 125px);
+        }
+
+    }
+    button{
+        .badge{
+            position: absolute;
+            top: -8px;
+            right: 50px;
+        }
+    }
+}
+
+//popup
+
+.popup {
+    position: fixed;
+    top: 80px;
+    right: 94px;
+    width: 500px;
+    z-index: 99;
+
+    @media only screen and (max-width: $md-brekpoint) {
+        position: fixed;
+        top: 80px;
+        bottom: auto;
+        right: 18px;
+        left: 18px;
+        z-index: 111;
+        width: initial;
+    }
+}

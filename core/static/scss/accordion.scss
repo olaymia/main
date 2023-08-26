@@ -1,0 +1,53 @@
+// Frequently asked questions 
+.frequently-questions-accordion {
+    .accordion-item {
+        position: relative;
+        border: 0;
+        background-color: transparent;
+        overflow: hidden;
+
+        .show {
+          box-shadow: $card-hover-shadow;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 100%;
+            top: 0;
+            background-color: $primary;
+            z-index: 9;
+          }
+        }
+        .accordion-collapse {
+          background-color: $white;
+        }
+
+        .accordion-button {
+          background-color: $white;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border: 0;
+          transition: none;
+    
+          &.collapsed {
+            background-color: transparent;
+            border: 0;
+            border: $border-width-2 $border-solid $grey;
+            border-radius: $border-radius-4;
+          }
+    
+          &:focus-visible {
+            outline: none;
+          }
+        }
+
+        &:last-of-type {
+          .accordion-button {
+            &.collapsed {
+              border-radius: $border-radius-4;
+            }
+          }
+        }
+    }
+   
+}

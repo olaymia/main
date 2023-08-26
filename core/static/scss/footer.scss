@@ -1,0 +1,14 @@
+.footer {
+
+    .footer-cross-img {
+        right: 0;
+        bottom: 0;
+    }
+    .footer-link {
+        opacity: 0.6;
+
+        &:hover {
+           opacity: 1;
+        }
+    }
+}
